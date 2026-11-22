@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  background: #111827;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  width: 100%;
+  max-width: 400px;
+  background: #1f2937;
+  padding: 32px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+  color: #f9fafb;
+}
+
+#valor {
+  font-size: 64px;
+  font-weight: bold;
+  margin: 25px 0;
+  color: #60a5fa;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+#botao-limpar-historico {
+  background: #374151;
+  color: #d1d5db;
+}
+
+#botao-somar {
+  background: #2563eb;
+  color: white;
+}
+
+#botao-diminuir {
+  background: #374151;
+  color: white;
+}
+
+#botao-zerar {
+  background: #991b1b;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+main {
+  border: 1px solid #374151;
+}
+
+h1 {
+  letter-spacing: 1px;
+}
+
+#valor {
+  text-shadow: 0 0 20px rgba(96, 165, 250, 0.25);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+@media (max-width: 480px) {
+  main {
+    width: 90%;
+    padding: 24px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #valor {
+    font-size: 52px;
+  }
+
+  button {
+    padding: 16px;
+  }
+  .grade-estatisticas {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .cartao-estatistica {
+    padding: 12px 6px;
+  }
+
+  .cartao-estatistica span {
+    font-size: 24px;
+  }
+}
+.secao-estatisticas {
+  margin-top: 30px;
+}
+
+.grade-estatisticas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.cartao-estatistica {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 12px;
+  padding: 16px 10px;
+}
+
+.cartao-estatistica p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 10px;
+}
+
+.cartao-estatistica span {
+  font-size: 28px;
+  font-weight: bold;
+  color: #60a5fa;
+}
+#historico {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+#historico li {
+  background: #111827;
+  border: 1px solid #374151;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #d1d5db;
+  text-align: left;
+  line-height: 1.5;
+}
